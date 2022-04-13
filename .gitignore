@@ -2,6 +2,7 @@
 *.tgz
 .*.sw*
 .DS_Store
+.idea
 # Scala
 *.jar
 *.scalac

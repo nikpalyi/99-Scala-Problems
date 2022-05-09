@@ -46,7 +46,7 @@ For example, given a problem P00 asking us to write a function `id` which
 returns its argument, the `P00.scala` file will look like this:
 
 ```scala
-package org.p99.scala
+ 
 
 object P00 {
 
@@ -58,7 +58,7 @@ object P00 {
 The `P00Spec.scala` file might look like this:
 
 ```scala
-package org.p99.scala
+ 
 
 import org.scalatest._
 

@@ -1,4 +1,3 @@
-package org.p99.scala
 
 import org.scalatest._
 

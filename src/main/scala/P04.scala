@@ -1,6 +1,6 @@
 
 object P04 {
 
-  // TODO
-
+  //  Find the number of elements of a list.
+  def numberOfElement[A](list: List[A]): Int = list.length
 }

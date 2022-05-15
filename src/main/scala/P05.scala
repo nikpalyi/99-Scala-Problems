@@ -1,6 +1,6 @@
 
 object P05 {
 
-  // TODO
-
+  // Reverse a List
+  def reverse[A](list: List[A]) : List[A] = list.reverse
 }

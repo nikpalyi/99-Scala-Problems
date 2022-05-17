@@ -8,15 +8,22 @@ class P01Spec extends UnitSpec {
   }
 
   "lastRecursive" should "return last e of list" in {
-    lastRecursive(List(7, 7)) shouldBe (7)
+    lastRecursive(List(7, 7)) shouldBe 7
   }
 
   "lastRecursive" should "return last the e of list" in {
-    lastRecursive(List(7)) shouldBe (7)
+    lastRecursive(List(7)) shouldBe 7
   }
-// TODO
-//  "lastRecursive" should "throw exception in case of empty list" in {
-//    lastRecursive(List()) shouldBe ()
-//    intercept[NoSuchElementException] {lastRecursive()}
-//    }
+
+  "lastRecursive1" should "throw exception in case of empty list" in {
+    val testList = List[Int]()
+    intercept[NoSuchElementException] {lastRecursive(testList)}
+    }
+
+  "lastRecursive2" should "throw exception in case of empty list" in {
+    val testList = List[Int]()
+    assertThrows[NoSuchElementException] {
+      lastRecursive(testList)
+    }
+    }
 }

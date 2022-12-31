@@ -8,6 +8,11 @@ object P07 {
   }
 }
 
+val deeplyNestedList = List(List(List(1, 2), 3), List(4, List(5, 6)), List(List(List(7)), 8, 9))
+val flatList = deeplyNestedList.flatten
+// flatList is now List(1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+
 //Flattening lists is a perfect application for recursive functions,
 //and the algorithm shouldn't be too complex.
 //The key point in flattening is the possibility to tell apart a list from a non-list element,
